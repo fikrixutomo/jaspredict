@@ -306,7 +306,8 @@ elif menu_utama == "Forecasting":
     st.title("🔮 Forecasting")
     forecasting()
     
-
-
+# Footer
+st.markdown("---")
+st.markdown("© 2025 - PT Jasa Raharja | Dashboard by Fikri Utomo_LAW")
 
     
