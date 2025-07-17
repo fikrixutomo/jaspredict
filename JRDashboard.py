@@ -15,7 +15,7 @@ st.set_page_config(
 )
  
 # ---- Sidebar Logo ----
-st.sidebar.image("logo.jpeg", use_column_width=True)  # 👈 logo above menu
+st.sidebar.image("logo.png", use_column_width=True)  # 👈 logo above menu
 menu_utama = st.sidebar.radio("Menu", ["Dashboard Analisa", "Forecasting"])
  
 # ---- Main Title ----
