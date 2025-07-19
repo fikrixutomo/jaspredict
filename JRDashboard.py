@@ -217,13 +217,13 @@ def forecasting():
             df_preds = pd.DataFrame({
                 'Week': [week_dis[i] for i in range(periode_forecast)],
                 'Month-Year':[monthYear_dis[i] for i in range(periode_forecast)],
-                'Prediction': [np.ceil(p) for p in sequence[-periode_forecast:]]}) 
+                'Prediction': [(p) for p in sequence[-periode_forecast:]]}) 
             
             
             st.write(df_preds)
              #Display hasil forecasting jumlah kecelakaan menggunakan bar chart dengan filter
             # Threshold value
-            threshold = 3
+            threshold = 1
 
             # Add a column to tag colors
             df_preds["Color"] = df_preds[ "Prediction"].apply(lambda x: "Above Threshold" if x > threshold else "Below Threshold")
@@ -274,14 +274,14 @@ def forecasting():
             df_preds = pd.DataFrame({
                 'Week': [week_dis[i] for i in range(periode_forecast)],
                 'Month-Year':[monthYear_dis[i] for i in range(periode_forecast)],
-                'Prediction': [np.ceil(p) for p in sequence[-periode_forecast:]]})    
+                'Prediction': [(p) for p in sequence[-periode_forecast:]]})    
                 
                   
             st.write(df_preds)
             
              #Display hasil forecasting jumlah kecelakaan menggunakan bar chart dengan filter
             # Threshold value
-            threshold = 3
+            threshold = 1
 
             # Add a column to tag colors
             df_preds["Color"] = df_preds[ "Prediction"].apply(lambda x: "Above Threshold" if x > threshold else "Below Threshold")
